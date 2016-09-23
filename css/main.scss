@@ -3,6 +3,11 @@
 ---
 @charset "utf-8";
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 39f567daed115bfde66d4e0555538bdf04c56e10
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -26,7 +31,12 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+<<<<<<< HEAD
 // Minima also includes a mixin for defining media queries.
+=======
+
+
+>>>>>>> 39f567daed115bfde66d4e0555538bdf04c56e10
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -34,6 +44,23 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+<<<<<<< HEAD
 
 // Import partials from the `minima` theme.
 @import "minima";
+=======
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+>>>>>>> 39f567daed115bfde66d4e0555538bdf04c56e10
